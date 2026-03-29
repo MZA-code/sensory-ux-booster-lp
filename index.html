@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sensory UX Booster — Premium Sound Feedback for Shopify</title>
+<meta name="description" content="Add premium sound feedback to every click on your Shopify store. 30+ handcrafted sounds, A/B testing, zero performance impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <img src="icon_sub.jpg" alt="Sensory UX Booster" class="nav-icon">
+      Sensory <span>UX</span> Booster
+    </a>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn active" data-lang="fr">FR</button>
+      </div>
+      <a href="https://apps.shopify.com/sensory-ux-booster" class="nav-cta" target="_blank" rel="noopener" data-i18n="nav_cta">Installer gratuitement</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <canvas class="hero-waveform" id="waveform"></canvas>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal" data-i18n="hero_eyebrow">Application Shopify</div>
+      <h1 class="reveal reveal-delay-1" data-i18n-html="hero_title">Votre boutique est sublime.<br>Donnez-lui un <em>son</em> a la hauteur.</h1>
+      <p class="hero-sub reveal reveal-delay-2" data-i18n="hero_sub">Un feedback sonore premium sur chaque interaction. Synthetise via Web Audio. Zero fichier. Moins de 5 Ko. Aucun impact sur les performances.</p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="https://apps.shopify.com/sensory-ux-booster" class="btn-primary" target="_blank" rel="noopener"><span data-i18n="hero_cta">Installer sur Shopify</span></a>
+        <a href="#demo" class="btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <span data-i18n="hero_demo">Voir la demo</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Video Demo ── -->
+<section class="video-section" id="demo">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="video_label">En action</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n-html="video_title">60 secondes. Chaque interaction.<br>Chaque <em>son.</em></h2>
+    <div class="video-wrapper reveal reveal-delay-2">
+      <video controls preload="metadata" poster="">
+        <source src="video_sensory_ux.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Features ── -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="features_label">Pourquoi nous choisir</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n-html="features_title">Le son est le sens manquant<br>du <em>e-commerce.</em></h2>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-number">01</div>
+        <h3 data-i18n="f1_title">30+ sons artisanaux</h3>
+        <p data-i18n="f1_desc">Trois gammes — Basic, Premium et Luxe — chacune concue pour une identite de marque differente. Synthese Web Audio pure, zero fichier audio charge.</p>
+        <div class="feature-stat" data-i18n="f1_stat">Ajout panier, variantes, quantite, wishlist & plus</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-number">02</div>
+        <h3 data-i18n="f2_title">A/B Testing integre</h3>
+        <p data-i18n="f2_desc">Segmentez vos visiteurs 50/50. Mesurez le taux de conversion, le panier moyen et le taux d'ajout au panier avec et sans sons. Des donnees, pas des suppositions.</p>
+        <div class="feature-stat" data-i18n="f2_stat">Prouvez le ROI avant de vous engager</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-number">03</div>
+        <h3 data-i18n="f3_title">Zero impact performance</h3>
+        <p data-i18n="f3_desc">Moins de 5 Ko. Chargement asynchrone. Aucun blocage du rendu. Aucun fichier audio a telecharger. Votre score Lighthouse reste identique — nous l'avons verifie.</p>
+        <div class="feature-stat" data-i18n="f3_stat">Lighthouse 100 / 100 avec l'app active</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── How it works ── -->
+<section class="how-section" id="how">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="how_label">Installation facile</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n-html="how_title">Trois etapes.<br><em>Zero code.</em></h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num" data-i18n="step1_num">Etape I</div>
+        <h3 data-i18n="step1_title">Installez l'app</h3>
+        <p data-i18n="step1_desc">Un clic depuis le Shopify App Store. Pas de cle API, pas de code, pas de developpeur. Compatible avec tous les themes Online Store 2.0.</p>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num" data-i18n="step2_num">Etape II</div>
+        <h3 data-i18n="step2_title">Choisissez vos sons</h3>
+        <p data-i18n="step2_desc">Parcourez 30+ presets en trois gammes. Assignez un son a chaque interaction — ajout au panier, variantes, quantite, wishlist. Preecoutez tout en temps reel.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num" data-i18n="step3_num">Etape III</div>
+        <h3 data-i18n="step3_title">Activez & mesurez</h3>
+        <p data-i18n="step3_desc">Activez l'app depuis l'editeur de theme. Lancez un A/B test pour mesurer l'impact sur votre taux de conversion. Observez les resultats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Pricing ── -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="pricing_label">Tarifs simples</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n-html="pricing_title">Commencez gratuitement.<br>Passez Pro quand vous etes <em>convaincu.</em></h2>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <h3 data-i18n="free_name">Gratuit</h3>
+        <div class="pricing-price">$0</div>
+        <div class="pricing-period" data-i18n="free_period">Gratuit pour toujours</div>
+        <ul class="pricing-features">
+          <li data-i18n="free_f1">2 interactions avec son</li>
+          <li data-i18n="free_f2">Presets sonores Basic</li>
+          <li data-i18n="free_f3">Tous les themes compatibles</li>
+          <li data-i18n="free_f4">Branding Sensory UX</li>
+        </ul>
+        <a href="https://apps.shopify.com/sensory-ux-booster" class="btn-ghost" target="_blank" rel="noopener"><span data-i18n="free_cta">Commencer</span></a>
+      </div>
+      <div class="pricing-card featured reveal reveal-delay-1">
+        <div class="pricing-badge" data-i18n="pro_badge">7 jours d'essai gratuit</div>
+        <h3>Pro</h3>
+        <div class="pricing-price">$4.99 <span>/ mo</span></div>
+        <div class="pricing-period" data-i18n="pro_period">Resiliable a tout moment</div>
+        <ul class="pricing-features">
+          <li data-i18n="pro_f1">Toutes les interactions avec son</li>
+          <li data-i18n="pro_f2">Presets Basic + Premium + Luxe</li>
+          <li data-i18n="pro_f3">A/B testing & dashboard ROI</li>
+          <li data-i18n="pro_f4">Sans branding</li>
+          <li data-i18n="pro_f5">Support prioritaire</li>
+        </ul>
+        <a href="https://apps.shopify.com/sensory-ux-booster" class="btn-primary" target="_blank" rel="noopener"><span data-i18n="pro_cta">Essai gratuit</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Testimonials ── -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="testi_label">Retours marchands</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n-html="testi_title">Premiers retours de<br><em>vraies boutiques.</em></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <div class="testimonial-quote" data-i18n="t1_quote">
+          Les sons Luxe sur notre bouton Ajout au panier ont completement transforme l'experience de notre boutique. Les clients en parlent.
+        </div>
+        <div class="testimonial-author">
+          <strong data-i18n="t1_author">Votre premier avis</strong>
+          <span data-i18n="t1_store">Boutique mode luxe</span>
+        </div>
+      </div>
+      <div class="testimonial reveal reveal-delay-1">
+        <div class="testimonial-quote" data-i18n="t2_quote">
+          Nous avons lance l'A/B test pendant deux semaines. +12% sur le taux d'ajout au panier avec les sons actives. Les chiffres parlent d'eux-memes.
+        </div>
+        <div class="testimonial-author">
+          <strong data-i18n="t2_author">Votre deuxieme avis</strong>
+          <span data-i18n="t2_store">Marque de bijoux</span>
+        </div>
+      </div>
+      <div class="testimonial reveal reveal-delay-2">
+        <div class="testimonial-quote" data-i18n="t3_quote">
+          J'avais peur pour les performances. Lighthouse avant et apres : scores identiques. Zero impact, que du positif.
+        </div>
+        <div class="testimonial-author">
+          <strong data-i18n="t3_author">Votre troisieme avis</strong>
+          <span data-i18n="t3_store">Boutique maison & lifestyle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Final CTA ── -->
+<section class="final-cta">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="cta_label">Pret ?</div>
+    <h2 class="section-title reveal reveal-delay-1" data-i18n-html="cta_title">Rendez chaque clic<br><em>inoubliable.</em></h2>
+    <p class="final-cta-sub reveal reveal-delay-2" data-i18n="cta_sub">Plan gratuit disponible. Aucune carte bancaire requise.</p>
+    <div class="reveal reveal-delay-3">
+      <a href="https://apps.shopify.com/sensory-ux-booster" class="btn-primary" target="_blank" rel="noopener"><span data-i18n="cta_btn">Installer sur Shopify — Gratuit</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <div class="footer-left">&copy; 2026 Sensory UX Booster</div>
+    <ul class="footer-links">
+      <li><a href="https://apps.shopify.com/sensory-ux-booster" target="_blank" rel="noopener">App Store</a></li>
+      <li><a href="#" target="_blank" rel="noopener" data-i18n="footer_privacy">Politique de confidentialite</a></li>
+      <li><a href="#" target="_blank" rel="noopener">Support</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
